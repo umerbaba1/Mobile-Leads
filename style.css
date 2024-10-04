@@ -1,0 +1,99 @@
+body {
+    max-width: 300px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    margin: 100px auto;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Space between buttons */
+    width: 100%; /* Ensure the buttons span the form width */
+    margin-bottom: 10px;
+}
+
+button {
+    width: 30%; /* Each button takes 30% of the space, allowing room for the 3 buttons */
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#input-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#input-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+#del {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#del:hover {
+    background-color: #e60000;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+
+}
+
+li a {
+    color: green;
+    font-weight: bold;
+    display: block;
+}
+
+li a:hover {
+    background-color: #c8f37e;
+    color: #000;
+}
+label{
+    color: green;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 200px) {
+    #myform {
+        min-width: 200px;
+        max-width: 300px; /* Add a max-width to limit element size */
+    }
+}
